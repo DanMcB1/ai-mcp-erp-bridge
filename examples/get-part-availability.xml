@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Sample SOAP 1.1 request the bridge sends for part 12345 at Lakeside Honda.
+     SessTok comes from a prior Login call. This is demo XML, not a vendor trace. -->
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+               xmlns:dms="http://lakeside.example/dms">
+  <soap:Header>
+    <dms:SessionHeader>
+      <dms:SessTok>SESS-DEMODEMODEMODEMO</dms:SessTok>
+    </dms:SessionHeader>
+  </soap:Header>
+  <soap:Body>
+    <dms:GetPartAvailability>
+      <dms:StoreNum>01</dms:StoreNum>
+      <dms:PartNo>12345</dms:PartNo>
+    </dms:GetPartAvailability>
+  </soap:Body>
+</soap:Envelope>
