@@ -1,5 +1,7 @@
 # Raw MCP-to-ERP Bridge
 
+**Portfolio project #5 of 12** from [@suraj_sharma14's FDE project list](https://x.com/suraj_sharma14/status/2125197762752806998).
+
 A small, local demo of a **bridge** that lets an AI agent talk to a legacy dealership system. The agent speaks **MCP** (JSON-RPC 2.0 tools with clean JSON). The system of record still speaks **SOAP 1.1**, with odd field names, string-encoded quantities, and a session token from a Login call. This repo is the translator in the middle.
 
 This is a **portfolio demo**, not production software and not a real DMS integration. The ERP/DMS is a **mock SOAP service** that runs on this machine. It is not CDK, Reynolds, Dealertrack, or any vendor system. Placing a parts order only writes a simulated record locally. No paid APIs are used. The MCP protocol itself is implemented **by hand** — that is the “raw” in the name — and tests can cross-check it with the official Python MCP SDK client.
